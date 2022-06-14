@@ -1,0 +1,84 @@
+"math_counter"
+{
+	"config"
+	{
+		"RoundEndShowTopDamage"		"" 	//回合结束显示输出排行 1=开启(默认) 0=关闭
+		"ShowTopDamageDuringBOSS"	"" 	//打BOSS期间显示输出排行  1=开启 0=关闭(默认)
+		"ForceEnable"				"" 	//强制显示实体血量(bhud) 1=开启(默认) 0=关闭
+		"CrosshairChannel"			"" 	//击中BOSS准星通道 范围1-6 默认=5
+		"BossRewardMoney"			"" 	//击中BOSS奖励金钱 默认=10
+		"BossHpKeepTime"			"" 	//BOSS HP数值维持显示时间 (数值无变动超过该秒数将不再显示) 默认=10
+		"BossDieKeepTime"			"" 	//BOSS阵亡后HP数值维持显示时间 默认=1 该秒数必须低于上面的秒数
+	}
+	"config"
+	{
+		"RoundEndShowTopDamage"		""
+		"ShowTopDamageDuringBOSS"	""
+		"ForceEnable"				""
+		"CrosshairChannel"			""
+		"BossRewardMoney"			""
+		"BossHpKeepTime"			""
+		"BossDieKeepTime"			""
+	}
+	
+	
+	"0" //math_counter
+	{
+		"HP_counter"		""	 	//实体名
+		"HP_Mode"			"1" 	//1=正常地图 2=sb蘑菇1续命counter图 不填则交由插件判断(可能会判断错)
+		"HPbar_counter"		""		 //实体名
+		"HPinit_counter"	"" 		//实体名
+		"CustomText"		"" 		//Boss名
+		"HPbar_mode"		"1" 	//1=OnHitMin触发结束内容 2=OnHitMax触发结束内容 不填则交由插件判断(可能会判断错)
+	}
+	"0"
+	{
+		"HP_counter"		""
+		"HP_Mode"			"1"
+		"HPbar_counter"		""
+		"HPinit_counter"	""
+		"CustomText"		""
+		"HPbar_mode"		"1"
+	}
+	
+	
+	"0" //FFXIV V2_8 V4_10
+	{
+		"HP_Group"
+		{
+			"0"	""
+			"1"	""
+			"2"	""
+			"3"	""
+			"4"	""
+		}
+		"CustomText"	""
+	}
+	
+	"0"
+	{
+		"HP_Group"
+		{
+			"0"	""
+			"1"	""
+			"2"	""
+			"3"	""
+			"4"	""
+		}
+		"CustomText"	""
+	}
+	
+	
+	"1" //func_breakable or func_physbox
+	{
+		"Type"		"breakable"
+		"BreakableName"		"" //实体名
+		"CustomText"		"" //BOSS名
+	}
+	"1"
+	{
+		"Type"		"breakable"
+		"BreakableName"		""
+		"CustomText"		""
+	}
+}
